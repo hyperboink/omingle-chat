@@ -1,0 +1,9 @@
+{
+  "name": "omingle",
+  "version": "0.0.1",
+  "description": "Omingle - Talk to strangers!",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.6.1"
+  }
+}
