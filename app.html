@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Omingle - Talk to strangers!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="chat-intro">
+        <div class="chat-intro-container">
+            <h1 id="logo">
+                <span>Omingle</span>
+                Talk to Strangers!
+            </h1>
+            <span class="chat-btn">Chat!</span>
+        </div>
+    </div>
+
+    <div class="chat-container">
+        <div class="chat-head">
+            <h2 class="chat-logo">Talk to Strangers!</h2>
+        </div>
+
+        <div class="chat-body">
+            <ul class="chat-messages"></ul>
+            <span class="chat-btn">Chat!</span>
+        </div>
+
+        <div class="chat-footer">
+            <form class="chat-form">
+                <span class="chat-stop">Stop :(</span>
+                <input class="chat-input" autocomplete="off" />
+                <button>Send</button>
+            </form>
+        </div>
+    </div>
+
+   <!--  <script src="/socket.io/socket.io.js"></script> -->
+    <script src="node_modules/socket.io/client-dist/socket.io.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

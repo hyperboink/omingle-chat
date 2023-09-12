@@ -11,6 +11,15 @@ body {
     text-align: center;
 }
 
+#logo span {
+    display: block;
+    font-family: Arial, san-serif;
+    font-size: 40px;
+    margin: 0 0 15px;
+    color: #7463ab;
+    letter-spacing: 3px;
+}
+
 .chat-logo {
     font-size: 20px;
     padding: 0 0 0 10px;
@@ -74,6 +83,10 @@ body {
 
 .chat-input:focus {
     outline: none;
+}
+
+.chat-input[readonly] {
+    background: #919191;
 }
 
 .chat-messages {

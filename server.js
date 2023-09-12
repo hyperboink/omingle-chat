@@ -12,7 +12,7 @@ let index = 1;
 app.use(express.static(__dirname));
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/app.html');
 });
 
 io.on('connection', (socket) => {
@@ -42,6 +42,6 @@ io.on('connection', (socket) => {
     });
 });
 
-server.listen(8003, () => {
-  console.log('listening on *:8003');
+server.listen(process.env.PORT || 3000, () => {
+  console.log('Server is running!');
 });
